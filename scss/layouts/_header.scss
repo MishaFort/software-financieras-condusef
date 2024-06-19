@@ -1,0 +1,61 @@
+.header {
+  margin: 0 auto;
+  padding: 14px 0px 14px 0px;
+  background-color: var(--color-primary-light);
+  border-bottom: 1px solid #eaeaea;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__logo {
+    max-width: 160px;
+    width: 160px;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 200px;
+      width: 200px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      max-width: 254px;
+      width: 254px;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      justify-content: flex-end;
+      flex-grow: 1;
+      gap: 16px;
+    }
+  }
+
+  &__burger {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--color-background-warm);
+
+    &:hover {
+      fill: var(--color-brand-normal);
+    }
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+}

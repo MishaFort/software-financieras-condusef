@@ -1,0 +1,62 @@
+.innovacion-section {
+  @media screen and (min-width: $bp-desktop) {
+    overflow: hidden;
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+    }
+  }
+
+  &__text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+
+    color: var(--color-primary-light);
+    font-family: 'Open Sans Hebrew', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      text-align: start;
+    }
+  }
+
+  &__text-part-container {
+    max-width: 330px;
+  }
+
+  &__title {
+    padding-top: 45px;
+    font-size: 30px;
+
+    @media screen and (min-width: $bp-desktop) {
+      padding-top: 20px;
+      font-size: 40px;
+    }
+  }
+
+  &__image-part {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 0 -20px;
+  }
+
+  &__image {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (min-width: 420px) {
+      max-width: 400px;
+    }
+  }
+}

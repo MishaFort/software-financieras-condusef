@@ -1,0 +1,20 @@
+:root {
+  --color-brand-normal: #4a2a92;
+  --color-primary-dark: #656565;
+  --color-primary-light: #ffffff;
+  --color-secondary-dark: #7b7b7b;
+  --color-background-warm: #f0920a;
+  --color-background-cool: #d6ccd4;
+  --color-header-links: #a09e9e;
+  --color-button-normal: #5ed513;
+  --color-button-light: #07fd19;
+
+  --color-condusef-dark: #00000099;
+  --color-condusef-title-dark: #4a2a92cc;
+  --color-condusef-title-light: #f0920acc;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1140px;
+$bp-max: 1440px;
